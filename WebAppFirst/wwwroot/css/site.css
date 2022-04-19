@@ -1,0 +1,60 @@
+﻿body {
+    background-color:aliceblue ;
+    width: auto;
+    border: solid;
+    
+}
+header {height:100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 145px;
+
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+footer {
+    background-color: darksalmon;
+    text-align: center;
+    height: 25px;
+}
+
+.textOdd {
+    padding:0px 58px;
+       }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.view{margin-left:20px;
+      margin-right:10px;
+
+      }
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}

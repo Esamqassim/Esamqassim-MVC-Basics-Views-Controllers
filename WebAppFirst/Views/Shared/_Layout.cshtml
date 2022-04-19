@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My MVC - @ViewBag.Title</title>
+   
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+
+          <h3 class="textOdd">Logo</h3>
+          <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="About">Aboute</a>
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "Contact", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Projects", "Projects", "Home")
+                </li>
+            </ul>
+          </nav>
+
+        </div>
+
+    </header>
+    <div class="view">
+        @RenderBody()
+    </div>
+    <footer>
+        <p>Esam Qassim &copy; @DateTime.Now</p>
+    </footer>
+</body>
+</html>
